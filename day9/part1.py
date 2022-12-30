@@ -69,11 +69,6 @@ def main():
                 case "D", amt:
                     instructions = [(0, -1) for _ in range(int(amt))]
 
-            # Check to see if tail needs to be updated
-            # Update if needed
-            # Mark new tail location
-            # Repeat
-
             for step in instructions:
                 # Move head one space
                 head.update(step)
@@ -82,7 +77,7 @@ def main():
                     update_tail_location(head, tail)
                     tail_positions.add((tail.x, tail.y))  # type: ignore
 
-        print(len(tail_positions))
+    print(len(tail_positions))
 
 
 if __name__ == "__main__":
