@@ -44,7 +44,7 @@ def update_tail_location(head: Coordinate, tail: Coordinate) -> None:
         else:  # Head is above tail
             tail.x = head.x
             tail.y = head.y - 1
-    elif abs(head.x - tail.x) > 1:
+    else:
         if head.x - tail.x < 0:  # Head is to the left of tail
             tail.x = head.x + 1
             tail.y = head.y
