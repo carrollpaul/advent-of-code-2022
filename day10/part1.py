@@ -43,4 +43,5 @@ with open("input.txt") as f:
 
         reg += amt
 
-print(crt)
+print(crt)  # EJCFPGLH
+print(sum(signals))  # 11960
